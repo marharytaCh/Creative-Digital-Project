@@ -1,0 +1,27 @@
+/* @font-face {
+    font-family: 'ProximaNova';
+    src: url('ProximaNova-Bold.eot');
+    src: url('ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+        url('ProximaNova-Bold.woff2') format('woff2'),
+        url('ProximaNova-Bold.woff') format('woff'),
+        url('ProximaNova-Bold.ttf') format('truetype'),
+        url('ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('ProximaNova-Semibold.eot');
+    src: url('ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('ProximaNova-Semibold.woff2') format('woff2'),
+        url('ProximaNova-Semibold.woff') format('woff'),
+        url('ProximaNova-Semibold.ttf') format('truetype'),
+        url('ProximaNova-Semibold.svg#ProximaNova-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+} */
+
+@include font-face('ProximaNova', 'fonts/ProximaN/ProximaNova-Semibold', 600);
+@include font-face('ProximaNova', 'fonts/ProximaN/ProximaNova-Bold', 700);
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap');

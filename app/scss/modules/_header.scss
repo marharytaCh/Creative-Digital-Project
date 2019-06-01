@@ -1,0 +1,72 @@
+.header{
+	background:linear-gradient(to top, rgba(159, 154, 207, 0.5), rgba(159, 154, 207, 0.5)), url('../images/header-bg.jpg') no-repeat top center;
+	background-size: cover;
+	min-height: 100vh;
+	color:$white;
+	padding-top:25px;
+	display: flex;
+	justify-content: center;
+	
+	&__navigation{
+		
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 25%;
+	}
+	&__text{
+		text-align: center;
+	}
+	&__title{
+		text-transform: uppercase;
+		font:700 4.27rem $proxima;
+		@media (max-width: $width-md){
+			font-size: 3rem;
+		}
+	}
+	&__desc{
+		font:1.6rem $ptsans;
+		font-style: italic;
+	}
+}
+.menu{
+	display: flex;
+	align-items: center;
+	font-size: 1.3rem;
+	position: fixed;
+	right:15%;
+	z-index: 999;
+	@media (max-width: $width-md) {
+		flex-direction: column;
+		align-items: flex-end;
+		position: fixed;
+		background: $fiolet;
+		top:0;
+		right: -150px;
+		z-index: 99;
+		justify-content: flex-start;
+		padding:20px;
+		transition: all .3s;
+		@include size(150px, 100%);
+	}
+	&__item{
+		padding-left: 30px;
+		text-transform: uppercase;
+		@media (max-width: $width-md){
+			padding-bottom: 10px;
+		}
+
+	}
+	&__link{
+		color:$white;
+		&:hover{
+			transform: scale(1.2);
+			color:$fiolet;
+			transition: all .4s;
+		}
+	}
+}
+.logo-icon{
+	fill:#fff;
+	width: 55px;
+	height: 75px;
+}
